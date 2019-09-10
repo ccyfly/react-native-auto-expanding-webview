@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View, WebView, ViewPropTypes } from 'react-native';
+import { View, ViewPropTypes } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 const CONTENT_HEIGHT_MESSAGE = 'CONTENT_HEIGHT_MESSAGE';
 
@@ -68,7 +69,7 @@ export default class AutoExpandingWebView extends React.PureComponent {
   render() {
     return (
       <View>
-        { this.renderLoadingView() }
+        {this.renderLoadingView()}
         <WebView
           {...this.props}
           ref={(webview) => { this.webview = webview; }}

@@ -16,5 +16,8 @@
     "html",
     "htmlview"
   ],
+  "dependencies": {
+    "react-native-webview": "^7.0.3"
+  },
   "license": "MIT"
 }
